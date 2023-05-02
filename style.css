@@ -53,6 +53,7 @@ color: beige;
   color: white;
   margin-left: 55%;
   margin-top: 10%;
+  font-size: 1rem;
 }
 .texto h4 {
   margin-left: 70%;
@@ -129,7 +130,7 @@ padding: 5px 8px;
 
 }
 .row{
-  margin: 3rem 20rem;
+  margin: 3rem 10rem;
   
 }
 .mb-3{
