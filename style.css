@@ -1,10 +1,8 @@
-
-body{
-font-size: 25px;
-
+body {
+  font-size: 25px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   margin-right: 1rem;
 }
 nav div img {
@@ -12,20 +10,19 @@ nav div img {
   height: 60px;
 }
 
-nav div p { 
+nav div p {
   padding-top: 15px;
   color: white;
   margin-right: 25%;
 }
 
-#as{
-background-color: #383c42;
-
+#as {
+  background-color: #383c42;
 }
 
 .img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/proyecto-integrador/img/ba1.jpg);
+    url(img/ba1.jpg);
   width: 100%;
   height: 800px;
   background-size: cover;
@@ -35,13 +32,11 @@ background-color: #383c42;
   color: rgb(168, 161, 161);
   padding-top: 15px;
   font-size: 20px;
-  
 }
-.navbar-light .navbar-nav .nav-link:hover{
-color: beige;
-
+.navbar-light .navbar-nav .nav-link:hover {
+  color: beige;
 }
-.nav-item:nth-child(3){
+.nav-item:nth-child(3) {
   color: green;
 }
 
@@ -62,7 +57,7 @@ color: beige;
   text-align: right;
 }
 
-.botones{
+.botones {
   display: flex;
   justify-content: end;
   width: 90%;
@@ -71,6 +66,7 @@ color: beige;
   background-color: transparent;
   border-color: aliceblue;
   color: white;
+  margin-right: 1rem;
 }
 
 .btn-success {
@@ -99,60 +95,85 @@ color: beige;
   margin: 0px 20px;
   border: none;
 }
-.card-body a{
-font-size: 10px;
-font-weight:bold;
-padding: 0px 2px;
-
+.card-body a {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0px 2px;
 }
-.btn-info{
+.btn-info {
   color: white;
 }
 
-
-.medio{
+.medio {
   display: flex;
   justify-content: center;
 }
-.medio img{
-width: 50%;
-margin-right: 1px;
+.medio img {
+  width: 50%;
+  margin-right: 1px;
 }
-.medio div{
-background-color: #383c42;
-color:white;
-padding:1rem;
-font-size: 25px;
-
+.medio div {
+  background-color: #383c42;
+  color: white;
+  padding: 1rem;
+  font-size: 25px;
 }
-.medio button{
-padding: 5px 8px;
-
+.medio button {
+  padding: 5px 8px;
 }
-.row{
+.row {
   margin: 3rem 10rem;
-  
 }
-.mb-3{
+.mb-3 {
   margin-top: 2rem;
-
 }
-.btn-primary{
+.btn-primary {
   background-color: rgb(150 201 62);
-  border-color:  rgb(150 201 62);
+  border-color: rgb(150 201 62);
   margin-top: 10px;
 }
 
-
 .footer {
   background-color: #1d4962;
-  height: 6rem;
- 
+  height: 100%;
 }
 .footer ul {
   padding-top: 15px;
- 
 }
 
-.nav-link{
-  color: white;}
+.nav-link {
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .texto {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+  }
+  .conoce{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: auto;
+  }
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .medio {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .medio img {
+    width: 100%;
+  }
+  .row {
+    padding: 10px;
+    margin: auto;
+  }
+  .footer {
+    height: 100%;
+  }
+}
