@@ -1,8 +1,18 @@
-let comprarTicket = document.getElementById("b2")
+let comprarTicket = document.getElementById("b2");
+let comprarTicket2 = document.getElementById("verde");
+let serOrador = document.getElementById("b");
 
-function cambio () {
-alert("hola")
+
+function compra() {
+  alert("compra");
 }
 
-comprarTicket.addEventListener("click",cambio
-)
+function orador() {
+    alert("Llene el formulario al pie de la pagina");
+  }
+
+
+comprarTicket.addEventListener("click", compra);
+comprarTicket2.addEventListener("click", compra);
+serOrador.addEventListener("click",orador);
+
