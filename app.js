@@ -1,10 +1,13 @@
 let comprarTicket = document.getElementById("b2");
 let comprarTicket2 = document.getElementById("verde");
+let serOrador2 = document.getElementById("confe");
 let serOrador = document.getElementById("b");
+let ticket = document.querySelector(".modal")
 
+console.log(ticket.style)
 
 function compra() {
-  alert("compra");
+  ticket.style.display = "block" 
 }
 
 function orador() {
@@ -15,4 +18,5 @@ function orador() {
 comprarTicket.addEventListener("click", compra);
 comprarTicket2.addEventListener("click", compra);
 serOrador.addEventListener("click",orador);
+serOrador2.addEventListener("click",orador);
 

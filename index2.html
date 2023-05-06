@@ -38,7 +38,7 @@
                                 <a class="nav-link" href="#bsas">El lugar y la fecha </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#conferencia">Conviertete en orador</a>
+                                <a id="confe" class="nav-link" href="#conferencia">Conviertete en orador</a>
                             </li>
                             <li class="nav-item">
                                 <a id="verde" class="nav-link" href="#compra">Comprar tickets</a>
@@ -47,8 +47,47 @@
                         </ul>
 
                     </div>
+                    <div class="modal" tabindex="1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
+           
+              <div class="modal" tabindex="1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">complete el  formtlario</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+<input type="text">
+                      </form>
+                      
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
             <div id="bsas" class="texto">
 
                 <h4>Conf BsAs</h4>
@@ -59,7 +98,7 @@
                     ex.
                 </p>
                 <div class="botones">
-                    <a href="#conferencia"  type="button" class="btn btn-light" id="b">Quiero ser orador</a>
+                    <a href="#conferencia" type="button" class="btn btn-light" id="b">Quiero ser orador</a>
                     <button type="button" class="btn btn-success" id="b2">Comprar ticket</button>
                 </div>
             </div>
@@ -134,7 +173,7 @@
         </div>
         <div id="conferencia" class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"  required>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
             </div>
             <div class="col">
                 <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
