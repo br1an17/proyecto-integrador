@@ -4,8 +4,10 @@ let serOrador2 = document.getElementById("confe");
 let serOrador = document.getElementById("b");
 let ticket = document.querySelector(".modal")
 let cerrar = document.querySelector(".btn-close")
+let valor1 = document.getElementById("flexRadioDefault1")
+let valor2 = document.getElementById("flexRadioDefault2")
+let valor3 = document.getElementById("flexRadioDefault3")
 
-console.log(ticket.style)
 
 function compra() {
   ticket.style.display = "block" 
