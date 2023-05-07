@@ -36,7 +36,7 @@ nav div p {
 .navbar-light .navbar-nav .nav-link:hover {
   color: beige;
 }
-.nav-item:nth-child(3) {
+#verde {
   color: green;
 }
 
@@ -121,7 +121,7 @@ nav div p {
 .medio button {
   padding: 5px 8px;
 }
-.row {
+.row2 {
   margin: 3rem 10rem;
 }
 .mb-3 {
@@ -143,6 +143,9 @@ nav div p {
 
 .nav-link {
   color: white;
+}
+.modal{
+  display: block;
 }
 
 @media screen and (max-width: 500px) {

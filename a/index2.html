@@ -53,28 +53,71 @@
 
             <div class="modal" tabindex="1">
                 <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content p-3">
                         <div class="modal-header">
-                            <h5 class="modal-title">complete el formtlario</h5>
+                            <h5 class="modal-title">Comprar entradas</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Default radio
-                            </label>
+                        <div class="row mb-2 p-3">
+
+                            <div class="col-md">
+                                <input type="text" class="form-control mb-2" placeholder="Nombre" aria-label="Nombre"
+                                    required>
+
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                                    required>
+                            </div>
+
+                            <div class="col-md">
+                                <input type="text" class="form-control mb-2" placeholder="Mail" aria-label="Mail"
+                                    required>
+
+                                <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono"
+                                    required>
+                            </div>
+                            <div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Particular
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Alumno
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Egresado
+                                    </label>
+                                </div>
+                                <div class="col-md">
+                                    <input type="text" class="form-control mb-2" placeholder="Cantidad"
+                                        aria-label="Mail" required>
+                                    <label for="form-control">
+                                        valor por entrada sin descuento= 1000
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="valor total" aria-label="Valor" disabled
+                                        required>
+                                </div>
+
+                            </div>
+
+
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Default checked radio
-                            </label>
-                        </div>
+
+
+
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -163,7 +206,7 @@
 
             <p>Anotate como orador para dae ina charla.ognite. Cuentanos de que quieres hablar!</p>
         </div>
-        <div id="conferencia" class="row">
+        <div id="conferencia" class="row2">
             <div class="col">
                 <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
             </div>
