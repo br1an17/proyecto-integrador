@@ -50,6 +50,20 @@
 
                 </div>
             </nav>
+            <div id="bsas" class="texto">
+
+                <h4>Conf BsAs</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente, iusto facere voluptatum
+                    cupiditate
+                    dignissimos nobis cumque eaque quae un de, dolorem voluptatem accusantium. Impedit, ipsum ex.
+                    esse nam!dignissimos nobis cumque eaque qu ae unde, dolorem voluptatem accusantium. Impedit, ipsum
+                    ex.
+                </p>
+                <div class="botones">
+                    <a href="#conferencia" type="button" class="btn btn-light" id="b">Quiero ser orador</a>
+                    <button type="button" class="btn btn-success" id="b2">Comprar ticket</button>
+                </div>
+            </div>
 
             <div class="modal" tabindex="1">
                 <div class="modal-dialog">
@@ -76,67 +90,54 @@
                                 <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono"
                                     required>
                             </div>
-                            <div name="comprador" id="comprador">
+                            <div class="row p-4">
 
-                                <div class="form-check">
-                                    <input value="10" class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Particular
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input  value="20" class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Egresado
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input value="20" class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault3">
-                                    <label class="form-check-label" for="flexRadioDefault3">
-                                        Alumno
-                                    </label>
-                                </div>
-                                <div class="col-md">
-                                    <input type="number" class="form-control mb-2" placeholder="Cantidad"
-                                        aria-label="cantidad" required>
-                                    <label for="form-control">
-                                        valor por entrada sin descuento= 1000
-                                    </label>
-                                    <input type="text" name="costo" id="costo" class="form-control" placeholder="valor total" aria-label="Valor" disabled
-                                        required>
-                                </div>
-
+                                <select name="comprador" id="comprador" onkeyup="precioFinal()" class="form-select"
+                                    aria-label="Default select example">
+                                    <option value="10">Particular 10% descuento</option>
+                                    <option value="20">Alumno 20% descuento</option>
+                                    <option value="30">Egresado 30% descuento</option>
+                                </select>
+                            </div>
+                            <div class="col-md">
+                                <input name="cantidad" id="cantidad" onkeyup="precioFinal()" type="number"
+                                    class="form-control mb-2" placeholder="Cantidad" aria-label="cantidad" required>
+                                <label for="form-control">
+                                    valor por entrada sin descuento= 1000
+                                </label>
+                                <input type="text" name="costo" id="costo" class="form-control"
+                                    placeholder="valor total" aria-label="Valor" disabled required>
                             </div>
 
-
                         </div>
-
-
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary">Comprar</button>
+                            <button id="comprado" type="button" class="btn btn-primary">Comprar</button>
                         </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="gracias" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Muchas gracias lo esperamos.</p>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
 
-            <div id="bsas" class="texto">
 
-                <h4>Conf BsAs</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente, iusto facere voluptatum
-                    cupiditate
-                    dignissimos nobis cumque eaque quae un de, dolorem voluptatem accusantium. Impedit, ipsum ex.
-                    esse nam!dignissimos nobis cumque eaque qu ae unde, dolorem voluptatem accusantium. Impedit, ipsum
-                    ex.
-                </p>
-                <div class="botones">
-                    <a href="#conferencia" type="button" class="btn btn-light" id="b">Quiero ser orador</a>
-                    <button type="button" class="btn btn-success" id="b2">Comprar ticket</button>
-                </div>
-            </div>
         </div>
     </header>
     <main>
@@ -208,12 +209,11 @@
         </div>
         <div id="conferencia" class="row2">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                <input type="text" class="form-control mb-2" placeholder="Nombre" aria-label="Nombre" required>
             </div>
             <div class="col">
                 <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
             </div>
-            <br>
             <div class="mb-3">
                 <textarea class="form-control" placeholder="Sobre que quieres hablar?" id="exampleFormControlTextarea1"
                     rows="3"></textarea>
@@ -245,13 +245,13 @@
                     <a class="nav-link" href="#">Conferencia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="verde">Terminos y condiciones</a>
+                    <a class="nav-link" href="#">Terminos y condiciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="verde">Privacidad</a>
+                    <a class="nav-link" href="#">Privacidad</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="verde">Estudiantes</a>
+                    <a class="nav-link" href="#">Estudiantes</a>
                 </li>
 
             </ul>

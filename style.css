@@ -144,9 +144,7 @@ nav div p {
 .nav-link {
   color: white;
 }
-.modal{
-  display: block;
-}
+
 
 @media screen and (max-width: 500px) {
   .texto {

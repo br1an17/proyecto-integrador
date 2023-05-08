@@ -2,29 +2,43 @@ let comprarTicket = document.getElementById("b2");
 let comprarTicket2 = document.getElementById("verde");
 let serOrador2 = document.getElementById("confe");
 let serOrador = document.getElementById("b");
-let ticket = document.querySelector(".modal")
-let cerrar = document.querySelector(".btn-close")
-let valor1 = document.getElementById("flexRadioDefault1")
-let valor2 = document.getElementById("flexRadioDefault2")
-let valor3 = document.getElementById("flexRadioDefault3")
+let ticket = document.querySelector(".modal");
+let gracias = document.querySelector(".gracias")
+let cerrar = document.querySelector(".btn-close");
+let btnComprado = document.getElementById("comprado")
 
+function precioFinal() {
+  let entradas = document.getElementById("cantidad").value;
+  let comprador = document.getElementById("comprador").value;
 
-function compra() {
-  ticket.style.display = "block" 
+  let descuento = (entradas * 1000 * comprador) / 100;
+  let precio = entradas * 1000 - descuento;
+
+  document.getElementById("costo").value = precio;
+}
+
+function modal() {
+  ticket.style.display = "block";
 }
 
 function cerrarModal() {
-  ticket.style.display = "none" 
+  ticket.style.display = "none";
+}
 
+function orador() {
+  alert("Llene el formulario al pie de la pagina");
+}
+function comprado(){
+  ticket.style.display = "none";
+  gracias.style.display = "block"; 
 }
 
 
-function orador() {
-  alert("Llene el formulario al pie de la pagina");  }
 
+comprarTicket.addEventListener("click", modal);
+comprarTicket2.addEventListener("click", modal);
+serOrador.addEventListener("click", orador);
+serOrador2.addEventListener("click", orador);
+cerrar.addEventListener("click", cerrarModal);
+btnComprado.addEventListener("click", comprado)
 
-comprarTicket.addEventListener("click", compra);
-comprarTicket2.addEventListener("click", compra);
-serOrador.addEventListener("click",orador);
-serOrador2.addEventListener("click",orador);
-cerrar.addEventListener("click",cerrarModal)
