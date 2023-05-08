@@ -3,9 +3,10 @@ let comprarTicket2 = document.getElementById("verde");
 let serOrador2 = document.getElementById("confe");
 let serOrador = document.getElementById("b");
 let ticket = document.getElementById("comprar");
-let gracias = document.getElementById("gracias")
+let gracias = document.getElementById("gracias");
 let cerrar = document.querySelector(".btn-close");
-let btnComprado = document.getElementById("comprado")
+let btnComprado = document.getElementById("comprado");
+let cerrar2 = document.getElementById("cerrar2")
 
 function precioFinal() {
   let entradas = document.getElementById("cantidad").value;
@@ -23,22 +24,24 @@ function modal() {
 
 function cerrarModal() {
   ticket.style.display = "none";
+  gracias.style.display = "none";
+  
 }
+
 
 function orador() {
   alert("Llene el formulario al pie de la pagina");
 }
-function comprado(){
+
+function comprado() {
   ticket.style.display = "none";
-   gracias.style.display = "block"; 
+  gracias.style.display = "block";
 }
-
-
 
 comprarTicket.addEventListener("click", modal);
 comprarTicket2.addEventListener("click", modal);
 serOrador.addEventListener("click", orador);
 serOrador2.addEventListener("click", orador);
 cerrar.addEventListener("click", cerrarModal);
-btnComprado.addEventListener("click", comprado)
-
+btnComprado.addEventListener("click", comprado);
+cerrar2.addEventListener("click",cerrarModal)
