@@ -148,7 +148,7 @@ nav div p {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .texto {
     width: 90%;
     margin-left: 5%;
@@ -175,6 +175,9 @@ nav div p {
   .row {
     padding: 10px;
     margin: auto;
+  }
+  #conferencia{
+    margin: 3rem 3rem;
   }
   .footer {
     height: 100%;
