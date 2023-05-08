@@ -2,8 +2,8 @@ let comprarTicket = document.getElementById("b2");
 let comprarTicket2 = document.getElementById("verde");
 let serOrador2 = document.getElementById("confe");
 let serOrador = document.getElementById("b");
-let ticket = document.querySelector(".modal");
-let gracias = document.querySelector(".gracias")
+let ticket = document.getElementById("comprar");
+let gracias = document.getElementById("gracias")
 let cerrar = document.querySelector(".btn-close");
 let btnComprado = document.getElementById("comprado")
 
@@ -30,7 +30,7 @@ function orador() {
 }
 function comprado(){
   ticket.style.display = "none";
-  gracias.style.display = "block"; 
+   gracias.style.display = "block"; 
 }
 
 
