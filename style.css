@@ -20,11 +20,6 @@ nav div p {
   background-color: #383c42;
 }
 
-.img {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/proyecto-integrador/img/ba1.jpg); */
-  background-size: cover;
-}
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(168, 161, 161);
@@ -46,7 +41,7 @@ nav div p {
   color: rgb(253, 239, 239);
   font-size: 1rem;
   margin-left: 50%;
-  margin-bottom: 17%;
+  margin-bottom: 15%;
 }
 
 .texto p {
@@ -146,9 +141,14 @@ nav div p {
 
 @media screen and (max-width: 600px) {
   .texto {
-    width: 90%;
+  margin-top: 5%;
     margin-left: 5%;
-    height: auto;
+    font-size: 10px;
+    margin-bottom: 0%;
+  }
+  .botones{
+    font-size: 10px;
+    width: 100%;
   }
   .conoce{
     display: flex;
