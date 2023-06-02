@@ -151,6 +151,10 @@ nav div p {
     margin-bottom: 0%;
     align-items: center;
   }
+  .texto p {
+    text-align: center;
+
+  }
   .botones {
     font-size: 10px;
     width: 100%;
